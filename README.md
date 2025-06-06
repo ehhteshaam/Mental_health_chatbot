@@ -18,7 +18,7 @@ A compassionate chatbot designed to offer mental health support by answering que
 
 ## 🚀 Demo
 
-👉 [Live Demo](https://huggingface.co/spaces/ehhteshaam/mental_health_chatbot) *(replace with your actual link)*
+👉 [Live Demo](https://huggingface.co/spaces/ehhteshaam/mental_health_chatbot)
 
 ---
 
