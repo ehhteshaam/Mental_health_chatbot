@@ -1,0 +1,7 @@
+gradio
+langchain
+langchain-groq
+langchain-community
+sentence-transformers
+chromadb
+pdfminer.six
