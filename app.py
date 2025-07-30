@@ -59,9 +59,17 @@ qa_chain = RetrievalQA.from_chain_type(
 def chatbot_response(user_input, history=[]):
     if not user_input.strip():
         return "Please provide a valid input", history
-    response = qa_chain.run(user_input)
-    history.append((user_input, response))
-    return response
+
+    # Simple greeting detection
+    greetings = ["hi", "hello", "hey", "how are you", "what's up", "good morning", "good evening"]
+    if user_input.lower().strip() in greetings:
+        reply = "Hello! I'm here to support you. How are you feeling today?"
+    else:
+        reply = qa_chain.run(user_input)
+
+    history.append((user_input, reply))
+    return reply
+
 
 # --- Gradio UI ---
 with gr.Blocks(theme='gradio/soft') as app:
