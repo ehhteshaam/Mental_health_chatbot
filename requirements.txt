@@ -4,4 +4,6 @@ langchain-groq
 langchain-community
 sentence-transformers
 chromadb
-pdfminer.six
+pypdf
+SpeechRecognition
+gTTS
